@@ -18,7 +18,6 @@ public class PasswordGenerator {
         String password = name+"-"+surname+"-"+prefercolor+"-"+somma;
 
         //stampo a video
-        System.out.println("password");
-
+        System.out.println(password);
     }
 }
