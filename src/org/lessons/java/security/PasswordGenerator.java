@@ -1,15 +1,32 @@
 package org.lessons.java.security;
 
+import java.util.Scanner;
+
 public class PasswordGenerator {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
+        Scanner scanner= new Scanner(System.in);
 
-        String name= "Pinco";
-        String surname= "Pallo";
-        int day= 12;
-        int month= 5;
-        int year= 1994;
-        String prefercolor ="magenta";
+        System.out.println ("your name?");
+        String name= scanner.nextLine();
+
+        System.out.println("your surname?");
+         String surname= scanner.nextLine();
+
+        System.out.println("day of birth?");
+        int day= scanner.nextInt();
+
+        System.out.println ("month of birth?");
+        int month = scanner.nextInt();
+
+        System.out.println( "year of birth?");
+        int year= scanner.nextInt();
+
+        scanner.nextLine();
+        System.out.println("your prefer color?");
+        String prefercolor = scanner.nextLine();
+        
 
         //somma valori data di nascita
         int somma= day+month+year;
